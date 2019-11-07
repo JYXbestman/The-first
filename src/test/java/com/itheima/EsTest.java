@@ -39,7 +39,9 @@ public class EsTest {
     @Before
     public void init() throws UnknownHostException {
         Settings settings = Settings.builder ().put ( "cluster.name", "elasticsearch" ).build ();
-        client = new PreBuiltTransportClient ( settings ).addTransportAddress ( new InetSocketTransportAddress ( InetAddress.getByName ( "127.0.0.1" ), 9300 ) );
+        client = new PreBuiltTransportClient ( settings ).addTransportAddress ( new InetSocketTransportAddress ( InetAddress.getByName ( "127.0.0.1" ), 9301 ) );
+        client = new PreBuiltTransportClient ( settings ).addTransportAddress ( new InetSocketTransportAddress ( InetAddress.getByName ( "127.0.0.1" ), 9302 ) );
+        client = new PreBuiltTransportClient ( settings ).addTransportAddress ( new InetSocketTransportAddress ( InetAddress.getByName ( "127.0.0.1" ), 9303 ) );
     }
 
     @Test
